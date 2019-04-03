@@ -8,9 +8,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  // Declaramos os componentes, directives etc aqui
+  // Declaramos os componentes, directives etc que usariamos aqui
   declarations: [],
-  // Declaramos os modulos que usaremos
+  // Declaramos os modulos que usariamos NESSE modulo
   imports: [
     BrowserModule,
     CommonModule,
@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     RouterModule
    ],
-   // components e modulos para serem levados para o AppModule.
+   // components e modulos para serem levados para o modulo que o importar.
   exports: [
     CommonModule,
     ReactiveFormsModule,

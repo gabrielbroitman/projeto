@@ -33,7 +33,8 @@ export function provideConfig() {
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent],
-
+  //o import aqui é pra conseguir usar os componentes na single page (trabalhamos com o app
+  // router imbutido no appcomponent, e esse vai varia de acordo com paginação etc. )
   imports: [
     ExemploModule,
     SocialLoginModule,
