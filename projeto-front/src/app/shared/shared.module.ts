@@ -8,7 +8,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
+  // Declaramos os componentes, directives etc aqui
   declarations: [],
+  // Declaramos os modulos que usaremos
   imports: [
     BrowserModule,
     CommonModule,
@@ -17,6 +19,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     RouterModule
    ],
+   // components e modulos para serem levados para o AppModule.
   exports: [
     CommonModule,
     ReactiveFormsModule,
@@ -25,6 +28,9 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     RouterModule,
     HttpClientModule],
+
+    // em providers definimos quem são os responsaveis pelos serviços,
+    // anotamos aqui para o servidor entender que ele deve injetar.
   providers: [],
 })
 export class SharedModule {}
