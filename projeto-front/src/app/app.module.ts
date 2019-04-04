@@ -11,6 +11,10 @@ import {
 import { SharedModule } from './shared/shared.module';
 import { ExemploModule } from './exemplo-login/exemplo.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
 
 const config = new AuthServiceConfig([
   {
@@ -32,11 +36,11 @@ export function provideConfig() {
 }
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent, NavbarComponent, HeaderComponent, FooterComponent],
   //o import aqui é pra conseguir usar os componentes na single page (trabalhamos com o app
   // router imbutido no appcomponent, e esse vai varia de acordo com paginação etc. )
   imports: [
-    ExemploModule,
+    HomeModule,
     SocialLoginModule,
     SharedModule,
     AppRoutingModule],
